@@ -1,0 +1,119 @@
+.cover{
+    min-height: 100vh;
+    // &__gradient{
+    //     position: absolute;
+    //         width: 100%;
+    //         height: 100%;
+    //         position: absolute;
+    //         top: 0;
+    //         right: 0;
+    //         background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    // }
+    &__image{
+        padding: 30px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        &:before{
+            content:'';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+        }
+    }
+    &__text-container{
+
+    }
+}
+
+@media (min-width: $from-tablet){
+    .cover{
+        &__gradient{
+           display: none;
+        }
+        &__image{
+
+        }
+        &__text-container{
+    
+        }
+    }
+}
+
+
+
+
+
+
+
+.category{
+    font-family: $main-font;
+    color: $text-color;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    &--sub{
+        font-weight: 300;
+    }
+}
+.title{
+    font-family: $main-font;
+    color: $secondary-color;
+    font-weight: 700;
+    font-size: 35px;
+}
+.description{
+    font-family: $secondary-font;
+    color: $text-color;
+    font-weight: 400;
+    font-size: 30px;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    &__text-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .info-text{
+            font-family: $main-font;
+            color: $inverted-color;
+            font-weight: 500;
+            font-size: 16px;
+            &--light{
+                font-weight: 300;
+            }
+        }
+    }
+    &__share-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .icon{
+            height: 50px;
+        }
+        .icon-facebook{
+            background: url("http://espanafascinante.com/test/icons/FB.png");
+            &--inverted-mobile{
+                @media (max-width: $from-pc){
+                    background: url("http://espanafascinante.com/test/icons/FB_white.png");
+                }
+            }
+        } 
+        .icon-share{
+            background: url("http://espanafascinante.com/test/icons/share.png");
+            &--inverted-mobile{
+                @media (max-width: $from-pc){
+                    background: url("http://espanafascinante.com/test/icons/share_white.png");
+                }
+            }
+        }
+    }
+}

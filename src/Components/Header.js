@@ -1,4 +1,6 @@
 import React from 'react';
+import data from '../data.json'
+
 
 const Header = () => (
     <header className="header">
@@ -14,20 +16,17 @@ const Header = () => (
             </div>
         </div>
         <div className="header__bottom">
-            <nav>
-                <ul className="header__list">
-                    <li>
-                        <a className="header__link" href="" title="Category" aria-label="Category">Category</a>
-                    </li>
-                    <li>
-                        <a className="header__link" href="" title="Category" aria-label="Category">Category</a>
-                    </li>
-                    <li>
-                        <a className="header__link" href="" title="Category" aria-label="Category">Category</a>
-                    </li>
-                </ul>
-            </nav>
-            
+            <ul className="header__list">
+                <li>
+                    <a className="header__link" href="" title="Category" aria-label="Category">Category</a>
+                </li>
+                <li>
+                    <a className="header__link" href="" title="Category" aria-label="Category">Category</a>
+                </li>
+                <li>
+                    <a className="header__link" href="" title="Category" aria-label="Category">Category</a>
+                </li>
+            </ul>
         </div>
         
     </header>
