@@ -4,7 +4,7 @@ import data from '../data.json'
 const Random = () => {
     let randomObject = data.random
     return(
-        <div className="random">
+        <section className="random">
           <ul className="random-list">
               {randomObject.map(random =>
               <li className="random-list__item" key={random.post_id}>
@@ -26,7 +26,7 @@ const Random = () => {
               )
               }
           </ul>
-        </div>
+        </section>
     )
 
 }

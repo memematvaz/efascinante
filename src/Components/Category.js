@@ -4,7 +4,7 @@ import data from '../data.json'
 const Category = () => {
     let categoryObject = data.category
     return(
-        <div className="category">
+        <section className="category">
           <h2 className="title title--category">Category</h2>
           <ul className="category-list">
               {categoryObject.map(category =>
@@ -26,7 +26,7 @@ const Category = () => {
               }
           </ul>
           <p className="title title--read">Read more</p>
-        </div>
+        </section>
     )
 
 }
