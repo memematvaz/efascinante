@@ -2,15 +2,13 @@ import React from 'react';
 import data from '../data.json'
 
 const Cover = () => {
-console.log(data)
     let coverObject = data.cover[0]
-console.log(coverObject.category.name)
     return(
         <div className="cover">
             <div className="cover__image" style={{backgroundImage: `url(${coverObject.cover_image.url})`}}></div>
             <div className="cover__gradient">
                 <div className="cover__text-container">
-                    <p className="category">{coverObject.category.name} | <span className="category--sub">{coverObject.subcategory.name}</span></p>
+                    <p className="overtext">{coverObject.category.name} | <span className="overtext--light">{coverObject.subcategory.name}</span></p>
                     <h1 className="title">{coverObject.title}</h1>
                     <p className="description">{coverObject.summary}</p>
                 </div>

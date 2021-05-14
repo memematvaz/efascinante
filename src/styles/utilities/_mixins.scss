@@ -1,15 +1,17 @@
+.logo{
+    height: 30px;
+}
+.icon{
+    height: inherit;
+}
 
-
-
-
-
-.category{
+.overtext{
     font-family: $main-font;
     color: $text-color;
     font-weight: 700;
     font-size: 18px;
     text-transform: uppercase;
-    &--sub{
+    &--light{
         font-weight: 300;
     }
     @media (min-width: $from-pc){
@@ -64,6 +66,9 @@
                 @media (max-width: $from-pc){
                     color: $inverted-color;                }
             }
+            &--inverted{
+                color: $inverted-color;
+            }
         }
     }
     &__share-container{
@@ -100,3 +105,4 @@
         }
     }
 }
+

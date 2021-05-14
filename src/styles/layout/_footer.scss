@@ -1,0 +1,13 @@
+.footer{
+    background-color: $secondary-color;
+    padding: 40px 30px;
+    
+    &__text-container{
+        margin: 30px 30px 0px;
+        display: flex;
+        flex-direction: row;
+        .info__text-container:first-child{
+            margin-right: 30px;
+        }
+    }
+}
