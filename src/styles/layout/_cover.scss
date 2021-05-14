@@ -25,10 +25,17 @@
         background-repeat: no-repeat;
         width: inherit;
         min-height: inherit;
-        margin-bottom: 20px;
     }
     &__text-container{
         margin-top: 100px;
+    }
+}
+
+@media (min-width: $from-tablet){
+    .cover{        
+        &__text-container{
+            margin: 0px 30px 0px 0px;
+        }
     }
 }
 

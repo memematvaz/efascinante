@@ -7,12 +7,13 @@
 
 .overtext{
     font-family: $main-font;
-    color: $text-color;
+    color: $secondary-text-color;
     font-weight: 700;
     font-size: 18px;
     text-transform: uppercase;
     &--light{
         font-weight: 300;
+        border-bottom: none;
     }
     @media (min-width: $from-pc){
         margin: 10px 0px;
@@ -27,6 +28,21 @@
     @media (min-width: $from-pc){
         margin: 10px 0px;
     }
+    &--category{
+        color: $main-color;
+        border-bottom: 1px solid $main-color;
+        text-transform: uppercase;
+        padding-bottom: 5px;
+    }
+    &--read{
+        color: $main-color;
+        border-top: 1px solid $main-color;
+        padding-top: 5px; 
+        text-align: end;
+    }
+    &--section{
+        font-size: 30px;
+    }
 }
 .description{
     font-family: $secondary-font;
@@ -34,6 +50,9 @@
     font-weight: 400;
     font-size: 28px;
     line-height: 1;
+    &--section{
+        font-size: 23px;
+    }
     @media (min-width: $from-pc){
         margin: 10px 0px;
     }
@@ -52,7 +71,7 @@
         align-items: flex-start;
         .info-text{
             font-family: $main-font;
-            color: $text-color;
+            color: $secondary-text-color;
             font-weight: 700;
             font-size: 18px;
             line-height: 0;
