@@ -9,7 +9,7 @@ const Category = () => {
           <ul className="category-list">
               {categoryObject.map(category =>
               <li className="category-list__item" key={category.post_id}>
-                    <div className="overtext__container">
+                    <div className="overtext__container overtext__container--column">
                         <p className="overtext">{category.category.name}</p>
                         <p className="overtext overtext--light">{category.subcategory.name}</p>
                     </div>
