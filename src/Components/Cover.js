@@ -8,7 +8,10 @@ const Cover = () => {
             <div className="cover__image" style={{backgroundImage: `url(${coverObject.cover_image.url})`}}></div>
             <div className="cover__gradient">
                 <div className="cover__text-container">
-                    <p className="overtext">{coverObject.category.name} | <span className="overtext--light">{coverObject.subcategory.name}</span></p>
+                    <div className="overtext__container">
+                        <p className="overtext">{coverObject.category.name}</p>
+                        <p className="overtext overtext--light">{coverObject.subcategory.name}</p>
+                    </div>
                     <h1 className="title">{coverObject.title}</h1>
                     <p className="description">{coverObject.summary}</p>
                 </div>

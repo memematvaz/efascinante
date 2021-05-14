@@ -8,10 +8,17 @@ const Random = () => {
           <ul className="random-list">
               {randomObject.map(random =>
               <li className="random-list__item" key={random.post_id}>
-                    <p className="overtext">{random.category.name} | <span className="overtext--light">{random.subcategory.name}</span></p>
-                    <h1 className="title title--section">{random.title}</h1>
-                    <img className="random-list__image" src={random.cover_image.url} alt="Buscar"></img>
-                    <p className="description description--section">{random.summary}</p>
+                   <div className="overtext__container">
+                        <p className="overtext">{random.category.name}</p>
+                        <p className="overtext overtext--light">{random.subcategory.name}</p>
+                    </div>
+                    <div className="overtext__image-title">
+                        <img className="random-list__image" src={random.cover_image.url} alt="Buscar"></img>
+                        <div>
+                            <h2 className="title">{random.title}</h2>
+                            <p className="description">{random.summary}</p>
+                        </div>
+                    </div>
                     <div className="random__info">
                         <div className="info__text-container">
                             <p className="info-text">{random.author.name}</p>

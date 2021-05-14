@@ -9,8 +9,11 @@ const Category = () => {
           <ul className="category-list">
               {categoryObject.map(category =>
               <li className="category-list__item" key={category.post_id}>
-                    <p className="overtext">{category.category.name} | <span className="overtext--light">{category.subcategory.name}</span></p>
-                    <h1 className="title title--section">{category.title}</h1>
+                    <div className="overtext__container overtext__container--column">
+                        <p className="overtext">{category.category.name}</p>
+                        <p className="overtext overtext--light">{category.subcategory.name}</p>
+                    </div>
+                    <h2 className="title title--section">{category.title}</h2>
                     <img className="category-list__image" src={category.cover_image.url} alt="Buscar"></img>
                     <p className="description description--section">{category.summary}</p>
                     <div className="info__text-container">
