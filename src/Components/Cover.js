@@ -7,8 +7,8 @@ console.log(data)
 console.log(coverObject.category.name)
     return(
         <div className="cover">
-            <div className="cover__gradient"></div>
-            <div className="cover__image" style={{backgroundImage: `url(${coverObject.cover_image.url})`}}>
+            <div className="cover__image" style={{backgroundImage: `url(${coverObject.cover_image.url})`}}></div>
+            <div className="cover__gradient">
                 <div className="cover__text-container">
                     <p className="category">{coverObject.category.name} | <span className="category--sub">{coverObject.subcategory.name}</span></p>
                     <h1 className="title">{coverObject.title}</h1>
@@ -16,8 +16,8 @@ console.log(coverObject.category.name)
                 </div>
                 <div className="info">
                     <div className="info__text-container">
-                        <p className="info-text">{coverObject.author.name}</p>
-                        <p className="info-text"><span className="info-text--light">{coverObject.date_post} · </span>{coverObject.readtime}</p>
+                        <p className="info-text info-text--cover">{coverObject.author.name}</p>
+                        <p className="info-text info-text--cover"><span className="info-text--light">{coverObject.date_post} · </span>{coverObject.readtime}</p>
                     </div>
                     <div className="info__share-container">
                         <a className="icon icon-facebook icon-facebook--inverted-mobile" href="" title="Facebook" aria-label="Facebook"></a>
@@ -25,7 +25,6 @@ console.log(coverObject.category.name)
                     </div>
                 </div>
             </div>
-
         </div>
     )
 

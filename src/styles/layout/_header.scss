@@ -47,7 +47,7 @@
 
 @media (min-width: $from-tablet){
     .header{
-        position: block;
+        position: static;
         &__top{
             height: 70px;
         }
