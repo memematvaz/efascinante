@@ -16,7 +16,6 @@
     }
     &__bottom{
         background-color: $main-color;
-        height: 40px;
     }
     &__menu, &__search{
         height: 40px;
@@ -27,6 +26,7 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        flex-wrap: wrap;
         padding: 10px 30px;
     }
     &__link{

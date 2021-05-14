@@ -5,7 +5,7 @@
         width: inherit;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         &__item{
             width: 50%;
             &:first-child{

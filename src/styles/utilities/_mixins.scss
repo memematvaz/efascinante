@@ -42,6 +42,7 @@
     }
     &--section{
         font-size: 30px;
+        overflow-wrap: break-word;
     }
 }
 .description{
@@ -52,6 +53,7 @@
     line-height: 1;
     &--section{
         font-size: 23px;
+        overflow-wrap: break-word;
     }
     @media (min-width: $from-pc){
         margin: 10px 0px;
@@ -74,7 +76,7 @@
             color: $secondary-text-color;
             font-weight: 700;
             font-size: 18px;
-            line-height: 0;
+            margin:0px;
             &:first-child{
                 margin-bottom: 10px;
             }
