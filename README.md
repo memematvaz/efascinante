@@ -9,4 +9,3 @@ Instala las dependencias locales: ``$ npm install``
 
 Arranca el proyecto: ``$ npm start``
 
-También podrás visualizarlo en el siguiente link: [Landing Page](https://mnemearie.github.io/efascinante/)
