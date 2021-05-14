@@ -1,0 +1,102 @@
+
+
+
+
+
+.category{
+    font-family: $main-font;
+    color: $text-color;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    &--sub{
+        font-weight: 300;
+    }
+    @media (min-width: $from-pc){
+        margin: 10px 0px;
+    }
+}
+.title{
+    font-family: $main-font;
+    color: $secondary-color;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 1;
+    @media (min-width: $from-pc){
+        margin: 10px 0px;
+    }
+}
+.description{
+    font-family: $secondary-font;
+    color: $text-color;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1;
+    @media (min-width: $from-pc){
+        margin: 10px 0px;
+    }
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: inherit;
+    width: 100%;
+    &__text-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .info-text{
+            font-family: $main-font;
+            color: $text-color;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 0;
+            &:first-child{
+                margin-bottom: 10px;
+            }
+            &--light{
+                font-weight: 300;
+            }
+            &--cover{
+                @media (max-width: $from-pc){
+                    color: $inverted-color;                }
+            }
+        }
+    }
+    &__share-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .icon{
+            height: 40px;
+            width: 40px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            &:first-child{
+                margin-right: 10px;
+            }
+        }
+        .icon-facebook{
+            background-image: url("http://espanafascinante.com/test/icons/FB.png");
+            &--inverted-mobile{
+                @media (max-width: $from-pc){
+                    background-image: url("http://espanafascinante.com/test/icons/FB_white.png");
+                }
+                
+            }
+        } 
+        .icon-share{
+            background-image: url("http://espanafascinante.com/test/icons/share.png");
+            &--inverted-mobile{
+                @media (max-width: $from-pc){
+                    background-image: url("http://espanafascinante.com/test/icons/share_white.png");
+                }
+            }
+        }
+    }
+}
